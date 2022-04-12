@@ -21,28 +21,24 @@ public class PlateHW7 {
 
         while (this.food > feed) {
             this.food -= feed;
+            if (this.food < 0) {
+                System.out.println("В миску необходимо положить корм");
+                break;
+            }
             counter++;
             break;
         }
     }
 
-//    public void isBandaFull(CatHW7[] cat) {
-//        int coun = 0;
-//
-//        CatHW7[] bandaCats = new CatHW7[] {
-//                new CatHW7("Чижик", 10),
-//                new CatHW7("Рижик", 20),
-//                new CatHW7("Васька", 15)
-//        };
-//
-//
-//        for (int i = 0; i < cat.length; i++) {
-//            coun += cat[i].getAppetite();
-//        }
-//        System.out.println(coun);
-//    }
 
-    public void info() {
+    public int info() {
+
         System.out.println("В миске сейчас: " + food);
+        return food;
+    }
+
+    public void putFood(int amount) {
+        this.food += amount;
+        System.out.println("В миску положили " + amount + " сейчас в миске " + food + " еды.");
     }
 }
