@@ -7,7 +7,7 @@ public class MainClassHW7 {
         int coun = 0;
 
         CatHW7 cat = new CatHW7("Barsik", 100);
-        PlateHW7 plate = new PlateHW7(101);
+        PlateHW7 plate = new PlateHW7(99);
 
         CatHW7[] bandaCats = new CatHW7[] {
                 new CatHW7("Чижик", 10),
@@ -25,4 +25,17 @@ public class MainClassHW7 {
         plate.info();
 
     }
+
+//    public static void isBandaFull(PlateHW7 plateHW7) {
+//
+//       // plateHW7.info();
+//       plateHW7.decreaseFood(int coun);
+//       // plateHW7.getFood() -= coun;
+//
+//        if (plateHW7.info() > 0 && plateHW7.getFood() > 0) {
+//
+//
+//        }
+//
+//    }
 }
